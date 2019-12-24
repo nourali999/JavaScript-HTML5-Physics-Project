@@ -8,36 +8,52 @@
 </head>
 <body>
   
-    <div>  
-        <label >Enter First Name</label>
-        <input type="text" name="firstName"
-         placeholder="Enter First Name here" 
-         id = "fName">
-
-        <br>
-        <br>
-        <Lable> Enter Last Name </Lable>
-        <input type="text" name="lastName" placeholder="Enter Last Name Here" id="lName">
-        
-    </div>
 
     <p>
         A ball is thrown upwards with an initial velocity of 8.00 m/s 
         at an angle of 30 degrees with horizontal from a cliff of height 5.00 m
         above the ground. The ball lands on the ground. How far from the 
         base of the cliff does the ball land if you are on a planet with half the 
-        mass of earth but the same radius.
+        mass of earth but the same radius?
     </p>
 
     <ul>
         <label > <b>Given</b></label>
         <li>Intial Velocity = 8 m/s</li>
+        <li>Height = 5 m</li>
+        <li>Angle = 30 degrees</li>
+        <li>Mass = (1/2) Mass of Earth</li>
+        <label> <b>Derived</b></label>
         <li>Initial Velocity x direction = 8cos(30) = 6.9 m/s </li>
         <li>Initial Velocity y direction = 8sin(30) = 4 m/s</li>
         <li>Change in y = -5 m </li> 
     </ul>
 
-    <button onclick="addAge()"> Age </button>
+    <div>  
+        <label >Initial Velocity</label>
+        <input type="text" name="firstName"
+         placeholder="Enter Initial Velocity"
+         id = "InV">
+    </div>
+    <div>
+        <Lable>Height</Lable>
+        <input type="text" 
+        name="height" 
+        placeholder="Enter Height" 
+        id="h">
+        
+    </div>
+
+    <div>
+        <Label>Angle</Label>
+        <input type="text" 
+        name="angle"
+        placeholder="Enter Angle"
+        id="angl">
+        
+    </div>
+
+    <button onclick="calculateChangeInX()"> Calculate </button>
 
 
 
