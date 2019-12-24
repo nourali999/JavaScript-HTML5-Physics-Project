@@ -1,9 +1,8 @@
 console.log('hello');
 
-var temp = prompt('Enter your age');
+
 
 function addAge(){
-    
-    console.log('My age is : '+temp)
-
+    var inputVal = document.getElementById('fName').value;
+    console.log('My age is : ' + inputVal);
 }
