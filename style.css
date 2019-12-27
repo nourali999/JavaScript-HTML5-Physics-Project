@@ -1,7 +1,45 @@
 .container {
-    width:100%;
+    display:flex;
     font-family: sans-serif;
+    align-items: flex-start;
+    justify-content: space-around;
+   
 
+    
+
+}
+.container-1{
+    flex:1;
+    border: 6px solid gray;
+    flex-basis: auto;
+    letter-spacing: 1px;
+    word-spacing: 1.8px;
+    line-height: 2em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    margin-top: 1em; 
+    margin-bottom: 1em;
+    margin-right: 1em;
+    margin-left: 1em;
+}
+.container-2{
+    flex:2;
+    flex-basis: auto;
+    border: 6px solid gray;
+    letter-spacing: 1px;
+    word-spacing: 1.8px;
+    line-height: 2em;
+
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    margin-top: 1em; 
+    margin-bottom: 1em;
+    margin-right: 1em;
+    margin-left: 1em;
 
 }
 
