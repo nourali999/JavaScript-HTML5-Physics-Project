@@ -38,14 +38,19 @@ function calculateChangeInX(){
 
     c = height;
 
-
     t = solve(a,b,c);
  
-
     Vox = (initialVelocity*Math.cos(angle * Math.PI /180));
     console.log(a, b, c, Vox);
 
     document.getElementById("solution").innerHTML = Math.round(Vox*t,2) + ' m';
+
+   
+
+    outputString();
+   
+
+
     }
 }
 
@@ -60,3 +65,27 @@ function solve(a , b, c) {
     var result2 = (-1 * b - Math.sqrt(Math.pow(b, 2) - (4 * a * c))) / (2 * a);
     return Math.max(result,result2);
 }
+
+
+
+function outputString(){
+    var word = "";
+
+    word+= "$\\ne $";
+    
+
+
+
+
+
+
+
+
+   document.getElementById("container-output").innerHTML = word;
+
+   MathJax.Hub.Queue(["Typeset",MathJax.Hub,"container-output"]);
+
+
+}
+
+  
