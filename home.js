@@ -80,7 +80,7 @@ function outputString(){
 
     word+= "$$t = {-b \\pm \\sqrt{b^2-4ac} \\over 2a}.$$" + "<br/>" + "<p>Substituing in for the quadratic formula we have , </p>"+" <br/> ";
 
-    word+= "$t =  $" + "$-$" + b + " "+  "$\\pm$";
+    word+= "$t =  $" + "$-" + b + " "+  "\\pm" +" "+ "\\sqrt{" +" "+ b + "^2-4" +"("+a+")"+"*"+c+"}" + "\\over 2 " +"(" +a+")" + "$";
 
 
 
