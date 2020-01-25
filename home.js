@@ -7,15 +7,7 @@ var b;
 var c;
 var t;
 var Vox;
-var Voy = b;
-
-
-
-
-
-
-
-
+var Voy =b;
 
 
 
@@ -71,11 +63,24 @@ function solve(a , b, c) {
 function outputString(){
     var word = "";
 
-    word+= "$\\ne $";
+    word+= "<p> Given  </p>" + " $\\Delta_y = $"+ " "+ height +" "+ " "+ "$V_{0y} = $ "+" "+ b+ "  ";
+
+    word+= "$\\frac{1}{2} g_{x} =$"+ " "+a + "<br/>" + "<br/>" + "<hr>";
+
+    word+= "$ \\Delta_y = V_{0y} - \\frac{1}{2} g_{x} t^{2}  $" + "<br/> ";
+
+    word+= "<p>  Rearranging  we get,  </p>"         +              "<br/>";
+
+    word+= "$ 0 =  - \\frac{1}{2} g_{x} t^{2} + V_{0y}  - \\Delta_y$ " + "<br/> <br/>";
+
+    word+= "<p>Substituting we have, <p/>"+ "<br/>"; 
     
+    word+= "$0 = $" + "  " + a +" " + "$t^{2}$"+ " "+ " $+$" + b+"$t$" +" " + "$+$" +" "+c;
+    word+= "<br/> <br/>";
 
+    word+= "$$t = {-b \\pm \\sqrt{b^2-4ac} \\over 2a}.$$" + "<br/>" + "<p>Substituing in for the quadratic formula we have , </p>"+" <br/> ";
 
-
+    word+= "$t =  $" + "$-$" + b + " "+  "$\\pm$";
 
 
 
