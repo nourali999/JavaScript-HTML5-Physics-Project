@@ -9,6 +9,8 @@ var t;
 var Vox;
 var Voy =b;
 
+var answer;
+
 
 
 function calculateChangeInX(){
@@ -55,7 +57,8 @@ function calculateChangeInX(){
 function solve(a , b, c) {
     var result = (-1 * b + Math.sqrt(Math.pow(b, 2) - (4 * a * c))) / (2 * a);
     var result2 = (-1 * b - Math.sqrt(Math.pow(b, 2) - (4 * a * c))) / (2 * a);
-    return Math.max(result,result2);
+    answer = Math.max(result,result2);
+    return answer;
 }
 
 
@@ -63,9 +66,11 @@ function solve(a , b, c) {
 function outputString(){
     var word = "";
 
-    word+= "<p> Given  </p>" + " $\\Delta_y = $"+ " "+ height +" "+ " "+ "$V_{0y} = $ "+" "+ b+ "  ";
+    word+= "<p> Given  </p>" + " $\\Delta_y = $"+ height +"<p>   <p/>" +  "$V_{0} = $" +   initialVelocity +"<p>   <p/>"  + "$V_{0y} = $ "+" "+ b+ "  ";
 
-    word+= "$\\frac{1}{2} g_{x} =$"+ " "+a + "<br/>" + "<br/>" + "<hr>";
+    word+= "<p>   <p/>"+ "$V_{0x} = $ " + Vox;
+
+    word+= "<p>   <p/>"+"$\\frac{1}{2} g_{x} =$"+ " "+a + " (I will let you figure out why this is true :) ) " + "<br/>" + "<br/>" + "<hr>";
 
     word+= "$ \\Delta_y = V_{0y} - \\frac{1}{2} g_{x} t^{2}  $" + "<br/> ";
 
@@ -80,7 +85,13 @@ function outputString(){
 
     word+= "$$t = {-b \\pm \\sqrt{b^2-4ac} \\over 2a}.$$" + "<br/>" + "<p>Substituing in for the quadratic formula we have , </p>"+" <br/> ";
 
-    word+= "$t =  $" + "$-" + b + " "+  "\\pm" +" "+ "\\sqrt{" +" "+ b + "^2-4" +"("+a+")"+"*"+c+"}" + "\\over 2 " +"(" +a+")" + "$";
+    word+= "$t =  $" + "$-" + b + " "+  "\\pm" +" "+ "\\sqrt{" +" "+ b + "^2-4" +"("+a+")"+"*"+c+"}" + "\\over 2 " +"(" +a+")" + "$"+ "<br/> <br/>";
+
+    word+= "<p> We ignore negative time so that leaves us with, <p/> <br/> <br/>"
+
+    word+= "$t= $" + answer + "<br/> <br/>";
+
+    word+= "$V_{0x}t = $" + Math.round(Vox*t,2) + " m";
 
 
 
