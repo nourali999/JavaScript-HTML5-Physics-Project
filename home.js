@@ -72,11 +72,11 @@ function outputString(){
 
     word+= "<p>   <p/>"+"$\\frac{1}{2} g_{x} =$"+ " "+a + " (I will let you figure out why this is true :) ) " + "<br/>" + "<br/>" + "<hr>";
 
-    word+= "$ \\Delta_y = V_{0y} - \\frac{1}{2} g_{x} t^{2}  $" + "<br/> ";
+    word+= "$ \\Delta_y = V_{0y}t - \\frac{1}{2} g_{x} t^{2}  $" + "<br/> ";
 
     word+= "<p>  Rearranging  we get,  </p>"         +              "<br/>";
 
-    word+= "$ 0 =  - \\frac{1}{2} g_{x} t^{2} + V_{0y}  - \\Delta_y$ " + "<br/> <br/>";
+    word+= "$ 0 =  - \\frac{1}{2} g_{x} t^{2} + V_{0y}t  - \\Delta_y$ " + "<br/> <br/>";
 
     word+= "<p>Substituting we have, <p/>"+ "<br/>"; 
     
