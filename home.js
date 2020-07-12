@@ -12,7 +12,6 @@ var Voy =b;
 var answer;
 
 
-
 function calculateChangeInX(){
     initialVelocity = document.getElementById("InV").value;
     height = document.getElementById("h").value;
@@ -101,6 +100,7 @@ function outputString(){
 
    MathJax.Hub.Queue(["Typeset",MathJax.Hub,"container-output"]);
 
+   
 
 }
 
