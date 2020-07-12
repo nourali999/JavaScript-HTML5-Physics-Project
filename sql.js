@@ -15,14 +15,20 @@ connection.connect(function(err) {
     console.log('Connected as id ' + connection.threadId);
 });
 
+function run(callback){
 connection.query('SELECT * FROM sql_store.customers where first_name = "Babara" ', function (error, results, fields) {
     if (error)
         throw error;
 
     results.forEach(result => {
-        console.log(result);
+        callback(error, result, fields);
         
     });
+});
+}
+
+run(function(err, data, fl){
+    console.log(data);
 });
 
 
