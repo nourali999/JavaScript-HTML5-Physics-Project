@@ -15,21 +15,14 @@ connection.connect(function(err) {
     console.log('Connected as id ' + connection.threadId);
 });
 
-function run(callback){
-connection.query('SELECT * FROM sql_store.customers where first_name = "Babara" ', function (error, results, fields) {
+
+connection.query('SELECT * FROM sql_store.customers where first_name = "Elka"',function (error, results, fields){
     if (error)
         throw error;
 
     results.forEach(result => {
-        callback(error, result, fields);
+        //callback(error, result, fields);
+        console.log(result);
         
     });
 });
-}
-
-run(function(err, data, fl){
-    console.log(data);
-});
-
-
-connection.end();
